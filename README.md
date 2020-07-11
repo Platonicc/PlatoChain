@@ -1,2 +1,0 @@
-# PlatoChain
-Open Source BlockChain

@@ -1,0 +1,24 @@
+{
+  "name": "PlatoChain",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev-test": "nodemon sys_test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Platonicc/PlatoChain.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Platonicc/PlatoChain/issues"
+  },
+  "homepage": "https://github.com/Platonicc/PlatoChain#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
