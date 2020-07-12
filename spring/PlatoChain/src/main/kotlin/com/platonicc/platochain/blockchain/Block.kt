@@ -16,13 +16,13 @@ class Block(var data: BlockData, var timestamp: Timestamp? = Tools.getTimeStamp(
         println("Block Hash:    -->> ${this.blockHash}")
     }
 
-    fun getBlockDetails(): String{
+   /* fun getBlockDetails(): String{
         return "----------Block Data--------------\n" +
                 "Data:          -->> ${this.data}\n" +
                 "Time Stamp:    -->> ${this.timestamp}\n" +
                 "Previous Hash: -->> ${this.previousHash}\n" +
                 "Block Hash:    -->> ${this.blockHash}\n"
-    }
+    }*/
 
     fun getBlockMap(): HashMap<String, Any>{
         val blockMap = HashMap<String, Any>()
@@ -54,9 +54,8 @@ class Block(var data: BlockData, var timestamp: Timestamp? = Tools.getTimeStamp(
     object Genesis{
         private val data = BlockData("foo", "boo", 0.0, "This is the genesis block!")
         private const val previousHash = "---"
-
-        fun create(): Block {
-            return Block(data, Tools.getTimeStamp(), previousHash) }
+        fun get(): Block {
+            return Block(data, null, previousHash) }
     }
 
 }
