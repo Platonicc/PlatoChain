@@ -1,5 +1,6 @@
 # PlatoChain
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/df58eeb1f06e49f2adbd4d7a1c1b29f4)](https://app.codacy.com/gh/Platonicc/PlatoChain?utm_source=github.com&utm_medium=referral&utm_content=Platonicc/PlatoChain&utm_campaign=Badge_Grade_Dashboard)
 [![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 Open Source BlockChain by Platonicc
