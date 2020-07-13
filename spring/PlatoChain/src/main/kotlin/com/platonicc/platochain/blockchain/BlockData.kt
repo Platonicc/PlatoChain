@@ -1,3 +1,9 @@
 package com.platonicc.platochain.blockchain
 
-data class BlockData(val sender:String?, val receiver:String, val amount: Double, var message: String?)
+import com.fasterxml.jackson.annotation.JsonCreator
+import com.fasterxml.jackson.annotation.JsonProperty
+
+data class BlockData @JsonCreator constructor(@JsonProperty("sender")val sender:String?,
+                                              @JsonProperty("receiver")val receiver:String?,
+                                              @JsonProperty("amount")val amount: Double?,
+                                              @JsonProperty("message")var message: String?)
