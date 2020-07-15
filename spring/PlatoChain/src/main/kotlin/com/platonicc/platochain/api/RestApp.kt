@@ -12,12 +12,14 @@ class RestApp {
     @RestController
     object GET{
 
+        //GET request to fetch the full blockchain over the network
         @GetMapping(value =[ "/chain", "/Chain", "/getChain", "/GetChain","/getchain"])
         fun sendChain(): String{
             return ObjectMapper().writeValueAsString(localChain)
         }
     }
 
+    //POST request for sending a min request with the block data
     @RestController
     object POST{
         @PostMapping(value=["/mine","/Mine", "/minBlock", "/MineBlock", "mineblock"])

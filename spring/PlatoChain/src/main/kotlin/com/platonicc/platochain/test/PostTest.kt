@@ -1,6 +1,7 @@
 package com.platonicc.platochain.test
 
 import com.google.gson.Gson
+import com.platonicc.platochain.blockchain.Block
 import com.platonicc.platochain.blockchain.BlockData
 import com.platonicc.platochain.blockchain.Chain
 import com.platonicc.platochain.blockchain.Chain.Companion.localChain
@@ -28,9 +29,7 @@ class PostTest {
                 i.printBlockDetails()
             }
             println(isValidChain(JSONStringToChain(Gson().toJson(localChain))))
-            chain2 = localChain
-            chain2[0].previousHash = "klsdnkjfnbfkjbnskanvskfdbndkss"
-            replaceChain(Gson().toJson(chain2))
+            println(localChain[0].getStruct() == Block.Genesis.getStruct())
             return Gson().toJson(localChain)
         }
 }

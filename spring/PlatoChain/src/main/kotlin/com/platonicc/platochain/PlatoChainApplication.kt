@@ -1,5 +1,6 @@
 package com.platonicc.platochain
 
+import com.platonicc.platochain.blockchain.Chain.Companion.localChain
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
 
